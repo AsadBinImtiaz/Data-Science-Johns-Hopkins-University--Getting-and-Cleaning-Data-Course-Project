@@ -20,26 +20,26 @@ Additionally following files were used
 The script `run_analysis.R` is the primary script for the entire data pipeline
 Followng steps are perdormed
 
-01 - The data directory is searched on the local system. If it does not exists, the dataset archive files is searched. If this is also missing dataset is downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-02 - If the dataset archive is found or downloaded, it is unzupped in data directory, overwriting anything already existing
-03 - First the `features.txt` is read to get all feature names
-04 - The important features which are mean and standard-deviation of all measures are are collected
-05 - The feature names are cleansed. All brackets are removed and dots and commas are converted to underscores
-06 - Next all training features `x_train.txt` are read and assigned names from step 05
-07 - All training labels are read from `y_train.txt`
-08 - All training subjects are read from `subject_train.txt`
-09 - The above 3 data tables are combined into one data table for Training-Set
-10 - Next all testing features `x_test.txt` are read and assigned names from step 05
-11 - All test labels are read from `y_test.txt`
-12 - All test subjects are read from `subject_test.txt`
-13 - The above 3 data tables are combined into one data table for Test-set
-14 - Traing and test sets from step 09 and 13 are combined into one big set
-15 - Only important labels from step 04 are retained
-16 - All activity labels are read from `activity_labels.txt`
-17 - The labes in merged dataset are replaced with descriptions from step 16
-18 - Tidy data table is persisted to disk
-19 - A summary data table with mean values per subject and activity is calculated
-20 - the summary data table is persisted to disk
+* 01 - The data directory is searched on the local system. If it does not exists, the dataset archive files is searched. If this is also missing dataset is downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* 02 - If the dataset archive is found or downloaded, it is unzupped in data directory, overwriting anything already existing
+* 03 - First the `features.txt` is read to get all feature names
+* 04 - The important features which are mean and standard-deviation of all measures are are collected
+* 05 - The feature names are cleansed. All brackets are removed and dots and commas are converted to underscores
+* 06 - Next all training features `x_train.txt` are read and assigned names from step 05
+* 07 - All training labels are read from `y_train.txt`
+* 08 - All training subjects are read from `subject_train.txt`
+* 09 - The above 3 data tables are combined into one data table for Training-Set
+* 10 - Next all testing features `x_test.txt` are read and assigned names from step 05
+* 11 - All test labels are read from `y_test.txt`
+* 12 - All test subjects are read from `subject_test.txt`
+* 13 - The above 3 data tables are combined into one data table for Test-set
+* 14 - Traing and test sets from step 09 and 13 are combined into one big set
+* 15 - Only important labels from step 04 are retained
+* 16 - All activity labels are read from `activity_labels.txt`
+* 17 - The labes in merged dataset are replaced with descriptions from step 16
+* 18 - Tidy data table is persisted to disk
+* 19 - A summary data table with mean values per subject and activity is calculated
+* 20 - the summary data table is persisted to disk
 
 ## Measures in tidy data
 
